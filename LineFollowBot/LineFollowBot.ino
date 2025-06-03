@@ -1,5 +1,8 @@
 int in1 = 2, in2 = 3, in3 = 4, in4 = 7;
+// in1, in2 for left wheel motor, in3, in4 for right wheel motor
 int ir1 = 5, ir2 = 6;
+// ir1 that is D5 refers to sensor (left)
+// ir2 that is D6 refers to sensor (right)
 int s1,s2;
 
 void setup() {

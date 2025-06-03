@@ -1,3 +1,5 @@
+#include <Wire.h>
+
 int in1 = 2, in2 = 3, in3 = 4, in4 = 7;
 int ir1 = 5, ir2 = 6;
 int s1,s2;
@@ -93,7 +95,7 @@ void forward()
 void left()
 {
   digitalWrite(in1, LOW);
-  digitalWrite(in2, LOW); //..
+  digitalWrite(in2, HIGH); //..
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
   Serial.println("right");
@@ -104,7 +106,7 @@ void right()
   digitalWrite(in1, HIGH);
   digitalWrite(in2, LOW);
   digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW); //..
+  digitalWrite(in4, HIGH); //..
   Serial.println("left");
 }
 
